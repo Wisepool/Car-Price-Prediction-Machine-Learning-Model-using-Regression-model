@@ -1,56 +1,48 @@
-Car Price Prediction Machine Learning Model 🚗📊
+# Car Price Prediction Machine Learning Model 🚗📊
+
 This project is a machine learning-based web application that predicts the price of a used car based on user inputs like brand, year of manufacture, kilometers driven, fuel type, and more.
 
-🔧 Project Structure
-Untitled.ipynb – Contains code for:
+---
 
-Data preprocessing
+## 🔧 Project Structure
 
-Exploratory data analysis (EDA)
+- **`Untitled.ipynb`** – Contains code for:
+  - Data preprocessing  
+  - Exploratory Data Analysis (EDA)  
+  - Feature engineering  
+  - Model training using `LinearRegression` from `scikit-learn`  
+  - Model evaluation  
+  - Saving the trained model to `model.pkl` using `pickle`  
 
-Feature engineering
+- **`app.py`** – A Streamlit web app that:
+  - Loads the trained model  
+  - Takes user inputs from the sidebar and main interface  
+  - Processes the inputs to match the trained model’s expected format  
+  - Predicts the car price based on the inputs  
+  - Displays the predicted price in real time  
 
-Model training using LinearRegression from scikit-learn
+- **`cardetails.csv`** – The dataset used for training and testing.
 
-Model evaluation
+- **`model.pkl`** – The saved trained Linear Regression model.
 
-Saving the trained model to model.pkl using pickle
+---
 
-app.py – A Streamlit web application that:
+## 🚀 How to Run the Project
 
-Loads the trained model
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Wisepool/Car-Price-Prediction-Machine-Learning-Model.git
+   cd Car-Price-Prediction-Machine-Learning-Model
+   ```
 
-Takes user inputs from the sidebar and main interface
+2. **Install the required packages**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Processes the inputs to match the trained model’s expected format
+3. **Run the Streamlit app**
+   ```bash
+   streamlit run app.py
+   ```
 
-Predicts car price based on user inputs
-
-Displays the predicted price in real-time
-
-cardetails.csv – The dataset used for training and testing the model.
-
-model.pkl – The serialized trained Linear Regression model.
-
-🚀 How to Run the Project
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/Wisepool/Car-Price-Prediction-Machine-Learning-Model.git
-cd Car-Price-Prediction-Machine-Learning-Model
-Make sure you have all the required packages installed
-If not, install them using:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Start the web app
-Just run the following command in your terminal:
-
-bash
-Copy
-Edit
-streamlit run app.py
+That's it — the app will launch in your browser and you can start predicting used car prices instantly.
