@@ -44,5 +44,3 @@ This project is a machine learning-based web application that predicts the price
    ```bash
    streamlit run app.py
    ```
-
-That's it — the app will launch in your browser and you can start predicting used car prices instantly.
